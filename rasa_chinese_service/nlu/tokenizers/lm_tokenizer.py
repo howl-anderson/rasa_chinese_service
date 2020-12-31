@@ -22,7 +22,7 @@ def language_model_tokenizer_service():
         model_weights, cache_dir=cache_dir, use_fast=True
     )
 
-    app = Sanic()
+    app = Sanic(__name__)
 
     @app.route('/')
     async def portal(request):
