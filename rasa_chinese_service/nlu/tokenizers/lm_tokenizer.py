@@ -45,8 +45,9 @@ def language_model_tokenizer_service():
 
         return json(tokens, dumps=json_dumps, ensure_ascii=False)
 
-    app.run(host='0.0.0.0', port=8000)
+    return app
 
 
 if __name__ == "__main__":
-    language_model_tokenizer_service()
+    app = language_model_tokenizer_service()
+    app.run(host='0.0.0.0', port=8000)

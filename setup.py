@@ -9,5 +9,6 @@ setup(
     author='Xiaoquan Kong',
     author_email='u1mail2me@gmail.com',
     description='Service package for rasa_chinese',
-    install_requires=["transformers>3.0,<4.0", "sanic"]
+    install_requires=["transformers>3.0,<4.0", "sanic"],
+    tests_requires=["pytest"]
 )
