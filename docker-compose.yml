@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  rasa-chinese-service:
+    # build: .
+    image: rasa-chinese-service:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - bert-cache:/tmp/cache
+    command: hfl/chinese-bert-wwm-ext
+
+volumes:
+  bert-cache:
+    driver: local
