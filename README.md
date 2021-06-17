@@ -44,4 +44,4 @@ WECHATY_PUPPET_SERVICE_TOKEN=python-wechaty-uos-token WECHATY_PUPPET_SERVICE_END
 RASA_SERVER=http://192.168.1.2:5050 WECHATY_PUPPET_SERVICE_TOKEN=python-wechaty-uos-token WECHATY_PUPPET_SERVICE_ENDPOINT=127.0.0.1:8080 python -m rasa_chinese_service.core.channels.wechat
 ```
 
-如果你是第一次访问 WeChat Web Puppet, 那么可能需要按照 WeChat Adapter 的提示,用将要作为机器人的微信(存在被官方封杀的风向)来扫描二维码登录.
+如果你是第一次访问 WeChat Web Puppet, 那么可能需要按照 WeChat Adapter 的提示,用将要作为机器人的微信(存在被官方封杀的风险)来扫描二维码登录.
