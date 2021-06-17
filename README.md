@@ -39,7 +39,7 @@ wechaty/wechaty:latest
 ```shell
 WECHATY_PUPPET_SERVICE_TOKEN=python-wechaty-uos-token WECHATY_PUPPET_SERVICE_ENDPOINT=127.0.0.1:8080 python -m rasa_chinese_service.core.channels.wechat
 ```
-上面的命令默认Rasa服务地址是 http://localhost:5005(这是Rasa默认的服务地址).如果你的Rasa服务地址不是这个(比如启动在别的机器上或者使用了不同的端口),那么请你在命令行前添加环境变量`RASA_SERVER`来指明,比如下面这个命令:
+上面的命令默认Rasa服务地址是 http://localhost:5005 (这是Rasa默认的服务地址).如果你的Rasa服务地址不是这个(比如启动在别的机器上或者使用了不同的端口),那么请你在命令行前添加环境变量`RASA_SERVER`来指明,比如下面这个命令:
 ```shell
 RASA_SERVER=http://192.168.1.2:5050 WECHATY_PUPPET_SERVICE_TOKEN=python-wechaty-uos-token WECHATY_PUPPET_SERVICE_ENDPOINT=127.0.0.1:8080 python -m rasa_chinese_service.core.channels.wechat
 ```
