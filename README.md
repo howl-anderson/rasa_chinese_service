@@ -44,4 +44,8 @@ WECHATY_PUPPET_SERVICE_TOKEN=python-wechaty-uos-token WECHATY_PUPPET_SERVICE_END
 RASA_SERVER=http://192.168.1.2:5050 WECHATY_PUPPET_SERVICE_TOKEN=python-wechaty-uos-token WECHATY_PUPPET_SERVICE_ENDPOINT=127.0.0.1:8080 python -m rasa_chinese_service.core.channels.wechat
 ```
 
-如果你是第一次访问 WeChat Web Puppet, 那么可能需要按照 WeChat Adapter 的提示,用将要作为机器人的微信(存在被官方封杀的风险)来扫描二维码登录.
+如果你是第一次访问 WeChat Web Puppet, 那么可能需要按照 WeChat Adapter 的提示,用将要作为机器人的微信(存在被官方封杀的风险)来扫描二维码登录: 在输出的log中寻找用文本堆砌而成的二维码,其下面会有一行日志,类似于下面:
+```text
+or you can scan qrcode from: https://wechaty.js.org/qrcode/https://login.weixin.qq.com/l/XXXXXXXXXX
+```
+打开这个网址就可以得到一个二维码,用准备作为机器人的微信扫码登录即可.当然如果文本堆砌而成的二维码的如果精细到可以直接扫描的话,直接扫描这个文本二维码也是可以的.
